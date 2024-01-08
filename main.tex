@@ -1,0 +1,80 @@
+
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+
+\ifCLASSOPTIONcompsoc
+  % IEEE Computer Society needs nocompress option
+  % requires cite.sty v4.0 or later (November 2003)
+  \usepackage[nocompress]{cite}
+\else
+  % normal IEEE
+  \usepackage{cite}
+\fi
+
+\usepackage{graphicx}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\usepackage{xcolor}
+
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\SetKwInput{KwMethod}{Method}
+\SetAlFnt{\footnotesize}
+\SetAlgoSkip{}
+
+\begin{document}
+
+\title{Recent networking papers}
+
+\author{
+  Jingpu~Duan
+  \IEEEcompsocitemizethanks{
+    \IEEEcompsocthanksitem J. Duan was with PCL. \protect\\
+    E-mail: duanjp@pcl.ac.cn
+  } % <-this % stops an unwanted space
+  %\thanks{Manuscript received April 19, 2005; revised August 26, 2015.}
+}
+
+
+\IEEEtitleabstractindextext{%
+  \begin{abstract}
+    Nothing
+  \end{abstract}
+  
+  % Note that keywords are not normally used for peerreview papers.
+  \begin{IEEEkeywords}
+    % Computer Society, IEEE, IEEEtran, journal, \LaTeX, paper, template.
+    Nothing
+  \end{IEEEkeywords}}
+
+
+% make the title area
+\maketitle
+
+\IEEEdisplaynontitleabstractindextext
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+\label{sec:introduction}
+
+With the \cite{zhang2020blockchain}.
+
+\section{Conclusion}
+The conclusion goes here.
+
+
+
+
+
+
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+\bibliographystyle{IEEEtran}%{plian}
+\bibliography{ref}{}
+
+% that's all folks
+\end{document}
+
+
